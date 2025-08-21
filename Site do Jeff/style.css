@@ -1,0 +1,314 @@
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #34495e;
+    --background-light: #f4f7f9;
+    --card-background: #ffffff;
+    --text-dark: #2c3e50;
+    --text-light: #ecf0f1;
+    --color-chest: #a4c9e7;
+    --color-back: #a4c9e7;
+    --color-legs: #a3d9b8;
+    --color-hamstring: #a3d9b8;
+    --color-shoulder: #fce2a9;
+    --color-biceps: #fce2a9;
+    --color-triceps: #fce2a9;
+    --color-calf: #f9c7a2;
+    --color-abs: #f3a6a1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+    margin: 0;
+    padding: 15px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.2em;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: var(--secondary-color);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e0e0e0;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-button.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Tabela de Treino - Responsiva */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.workout-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.workout-table th,
+.workout-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 8px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.workout-table th {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-weight: 600;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.day-header {
+    background-color: var(--secondary-color) !important;
+    color: var(--text-light) !important;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    writing-mode: horizontal-tb;
+}
+
+.workout-table tbody tr:nth-child(odd) {
+    background-color: var(--background-light);
+}
+
+.workout-table tr:hover {
+    background-color: #eaf5fd;
+}
+
+/* Cores dos grupos musculares */
+.chest,
+.back {
+    background-color: var(--color-chest);
+}
+
+.legs,
+.hamstring {
+    background-color: var(--color-legs);
+}
+
+.shoulder,
+.biceps,
+.triceps {
+    background-color: var(--color-shoulder);
+}
+
+.calf {
+    background-color: var(--color-calf);
+}
+
+.abs {
+    background-color: var(--color-abs);
+}
+
+/* Aba de Vídeos */
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.video-item {
+    background-color: var(--card-background);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    /* Adicionado para flexbox */
+    flex-direction: column;
+    /* Organiza os itens em coluna */
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.video-item h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.video-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.video-item a:hover {
+    background-color: #3884d4;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .tab-button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    .workout-table th,
+    .workout-table td {
+        padding: 8px 6px;
+        font-size: 0.8em;
+    }
+
+    .day-header {
+        font-size: 0.9em;
+        padding: 10px 4px;
+    }
+
+    .video-list {
+        grid-template-columns: 1fr;
+    }
+
+    .video-item {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .tab-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .workout-table {
+        min-width: 480px;
+    }
+
+    .workout-table th,
+    .workout-table td {
+        padding: 6px 4px;
+        font-size: 0.75em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+.credits {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.credits h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.credits p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.credits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.credits li {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
