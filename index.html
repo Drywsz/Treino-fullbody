@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Full Body 3x Semanas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💪 Seu Treino Full Body</h1>
+            <p>Acompanhe sua rotina de exercícios para resultados incríveis.</p>
+        </div>
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('planilha', this)">📋 Planilha</button>
+            <button class="tab-button" onclick="openTab('videos', this)">🎬 Vídeos</button>
+        </div>
+        <div id="planilha" class="tab-content active">
+            <div class="table-container">
+                <table class="workout-table">
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Grupo Muscular</th>
+                            <th>Exercício</th>
+                            <th>Séries</th>
+                            <th>Repetições</th>
+                            <th>Descanso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="9" class="day-header">Treino 1</td>
+                            <td class="chest">Peito</td>
+                            <td>Supino reto c/ halteres (aquec.)</td>
+                            <td>2</td>
+                            <td>12</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="chest">Peito</td>
+                            <td>Supino reto c/ halteres</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>120s</td>
+                        </tr>
+                        <tr>
+                            <td class="chest">Peito</td>
+                            <td>Crucifixo reto na máquina</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>90s</td>
+                        </tr>
+                        <tr>
+                            <td class="biceps">Bíceps</td>
+                            <td>Rosca direta barra W</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="biceps">Bíceps</td>
+                            <td>Rosca Scott máquina</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="shoulder">Ombro frontal</td>
+                            <td>Desenvolvimento c/ halteres</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>90s</td>
+                        </tr>
+                        <tr>
+                            <td class="legs">Pernas (Quadríceps)</td>
+                            <td>Agachamento Smith</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>120s</td>
+                        </tr>
+                        <tr>
+                            <td class="calf">Panturrilha</td>
+                            <td>Panturrilha em pé</td>
+                            <td>2</td>
+                            <td>12-15</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="abs">Abdômen</td>
+                            <td>Reto ou prancha</td>
+                            <td>2</td>
+                            <td>30–60s</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="9" class="day-header">Treino 2</td>
+                            <td class="legs">Pernas (Quadríceps)</td>
+                            <td>Agachamento Smith ou Leg Press</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>120s</td>
+                        </tr>
+                        <tr>
+                            <td class="legs">Pernas (Quadríceps)</td>
+                            <td>Cadeira extensora</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>90s</td>
+                        </tr>
+                        <tr>
+                            <td class="hamstring">Posterior de coxa</td>
+                            <td>Stiff c/ barra</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>120s</td>
+                        </tr>
+                        <tr>
+                            <td class="hamstring">Posterior de coxa</td>
+                            <td>Cadeira flexora</td>
+                            <td>2</td>
+                            <td>10-12</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="shoulder">Ombro posterior</td>
+                            <td>Crucifixo inverso c/ halteres</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>90s</td>
+                        </tr>
+                        <tr>
+                            <td class="shoulder">Ombro medial</td>
+                            <td>Elevação lateral c/ halteres</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>90s</td>
+                        </tr>
+                        <tr>
+                            <td class="triceps">Tríceps</td>
+                            <td>Tríceps pulley c/ corda</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="calf">Panturrilha</td>
+                            <td>Panturrilha sentado</td>
+                            <td>2</td>
+                            <td>12-15</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="abs">Abdômen</td>
+                            <td>Reto ou prancha</td>
+                            <td>2</td>
+                            <td>30–60s</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="9" class="day-header">Treino 3</td>
+                            <td class="back">Costas</td>
+                            <td>Puxada articulada pegada aberta</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>120s</td>
+                        </tr>
+                        <tr>
+                            <td class="back">Costas</td>
+                            <td>Remada articulada neutra</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>120s</td>
+                        </tr>
+                        <tr>
+                            <td class="back">Costas</td>
+                            <td>Pulldown c/ corda</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>90s</td>
+                        </tr>
+                        <tr>
+                            <td class="triceps">Tríceps</td>
+                            <td>Tríceps francês unilateral polia</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="triceps">Tríceps</td>
+                            <td>Tríceps testa barra W</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="biceps">Bíceps (suporte)</td>
+                            <td>Rosca martelo c/ corda</td>
+                            <td>3</td>
+                            <td>10-8-6</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="hamstring">Posterior de coxa</td>
+                            <td>Stiff leve ou Glúteo em máquina</td>
+                            <td>2</td>
+                            <td>10-12</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="hamstring">Posterior de coxa</td>
+                            <td>Mesa flexora</td>
+                            <td>2</td>
+                            <td>10-12</td>
+                            <td>60s</td>
+                        </tr>
+                        <tr>
+                            <td class="calf">Panturrilha</td>
+                            <td>Panturrilha em pé</td>
+                            <td>2</td>
+                            <td>12-15</td>
+                            <td>60s</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="videos" class="tab-content">
+            <ul class="video-list">
+                <li class="video-item">
+                    <h3>Supino Reto c/ Halteres</h3>
+                    <p>Ideal para peitoral, ombros e tríceps.</p>
+                    <a href="https://www.youtube.com/watch?v=Pw-zpREJ7xo" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Crucifixo Reto na Máquina</h3>
+                    <p>Foco na porção central do peitoral.</p>
+                    <a href="https://www.youtube.com/watch?v=J1YnmuweOkM" target="_blank">Assistir
+                        Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Rosca Direta Barra W</h3>
+                    <p>Ótimo para o bíceps.</p>
+                    <a href="https://www.youtube.com/watch?v=FHyZEuRpSg4" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Rosca Scott máquina</h3>
+                    <p>Foco em isolamento de bíceps.</p>
+                    <a href="https://www.youtube.com/watch?v=BGc0CppVDi0" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Desenvolvimento c/ Halteres</h3>
+                    <p>Para desenvolvimento de ombros.</p>
+                    <a href="https://www.youtube.com/watch?v=eufDL9MmF8A&pp=0gcJCfwAo7VqN5tD" target="_blank">Assistir
+                        Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Agachamento Livre</h3>
+                    <p>Trabalha pernas e glúteos.</p>
+                    <a href="https://www.youtube.com/watch?v=4L5nBs8Eq7g" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Panturrilha em pé</h3>
+                    <p>Para o músculo gastrocnêmio.</p>
+                    <a href="https://www.youtube.com/watch?v=xIq9K_oeTK4" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Reto Abdominal</h3>
+                    <p>Exercício clássico para o abdômen.</p>
+                    <a href="https://www.youtube.com/watch?v=gE3hDK6pvBk&vl=en-US" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Prancha Abdominal</h3>
+                    <p>Fortalece o core de forma isométrica.</p>
+                    <a href="https://www.youtube.com/watch?v=Wk5paY5G_Qg" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Leg Press</h3>
+                    <p>Excelente para pernas e glúteos.</p>
+                    <a href="https://www.youtube.com/watch?v=adPY6cd4h58" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Cadeira extensora</h3>
+                    <p>Isolamento do quadríceps.</p>
+                    <a href="https://www.youtube.com/watch?v=VAA0kYChGB0" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Stiff c/ barra</h3>
+                    <p>Foco na parte posterior da coxa e glúteos.</p>
+                    <a href="https://www.youtube.com/watch?v=_6ElJLyBXcE" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Cadeira flexora</h3>
+                    <p>Para isolamento do músculo posterior da coxa.</p>
+                    <a href="https://www.youtube.com/watch?v=RYCqCZhHh74" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Crucifixo inverso c/ halteres</h3>
+                    <p>Desenvolve a porção posterior do ombro.</p>
+                    <a href="https://www.youtube.com/watch?v=G3DXKpk5AJA" target="_blank">Assistir
+                        Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Elevação lateral c/ halteres</h3>
+                    <p>Para a porção medial do ombro.</p>
+                    <a href="https://www.youtube.com/watch?v=c7zMmbWkUPw" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Tríceps pulley c/ corda</h3>
+                    <p>Para isolamento dos tríceps.</p>
+                    <a href="https://www.youtube.com/watch?v=re-ILvqD1RE" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Panturrilha sentado</h3>
+                    <p>Foco no músculo sóleo.</p>
+                    <a href="https://www.youtube.com/watch?v=xIq9K_oeTK4" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Pulley frente pegada aberta</h3>
+                    <p>Para costas (grande dorsal).</p>
+                    <a href="https://www.youtube.com/watch?v=YywSCu4Y360" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Remada com triângulo</h3>
+                    <p>Melhora a densidade das costas.</p>
+                    <a href="https://www.youtube.com/watch?v=EHHKXwVcAoM" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Pulldown c/ corda</h3>
+                    <p>Para trabalhar o latíssimo do dorso.</p>
+                    <a href="https://www.youtube.com/watch?v=YP_I4KdWCWk" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Tríceps francês unilateral polia</h3>
+                    <p>Para isolamento dos tríceps.</p>
+                    <a href="https://www.youtube.com/watch?v=zjbKswHOH_I" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Tríceps testa com halter</h3>
+                    <p>Um clássico para o tríceps.</p>
+                    <a href="https://www.youtube.com/watch?v=VakpIeaaeXA" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Stiff c/barra</h3>
+                    <p>Variação para o músculo posterior da coxa.</p>
+                    <a href="https://www.youtube.com/watch?v=_6ElJLyBXcE" target="_blank">Assistir Vídeo</a>
+                </li>
+                <li class="video-item">
+                    <h3>Mesa flexora</h3>
+                    <p>Para o músculo posterior da coxa.</p>
+                    <a href="https://www.youtube.com/watch?v=KIoiwCfcTXM" target="_blank">Assistir Vídeo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="credits">
+            <h3>Créditos dos Vídeos</h3>
+            <p>Os vídeos incluídos nesta página são de autoria de terceiros e têm caráter meramente educativo e ilustrativo. Todo o conteúdo visual e direitos autorais pertencem aos seus respectivos criadores.</p>
+            <ul>
+                <li>Laércio Refundini</li>
+                <li>Fabricio Pacholok</li>
+                <li>Renato Cariani</li>
+                <li>Leandro Twin</li>
+                <li>Vivi</li>
+                <li>Filipe Marins</li>
+                <li>GUSTAVO</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>Qualquer bug ou dúvida, é so chamar o Endryw💪</p>
+        </div>
+    </div>
+    <script>
+        function openTab(tabName, buttonElement) {
+            var i;
+            var tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            var tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            buttonElement.className += " active";
+        }
+    </script>
+</body>
+
+</html>
